@@ -50,7 +50,7 @@ gulp.task('build:scripts', function () {
     .src([
       './src/scripts/module.js'
     ])
-    .pipe(concat('betsol-ng-intl-tel-input.js'))
+    .pipe(concat('vesnican-ng-intl-tel-input.js'))
     .pipe(ngAnnotate({
       'single_quotes': true
     }))
@@ -58,7 +58,7 @@ gulp.task('build:scripts', function () {
     .pipe(gulp.dest('dist/scripts'))
     .pipe(uglify())
     .pipe(header(headerContent, { pkg : pkg } ))
-    .pipe(rename('betsol-ng-intl-tel-input.min.js'))
+    .pipe(rename('vesnican-ng-intl-tel-input.min.js'))
     .pipe(gulp.dest('dist/scripts'))
     .on('error', gutil.log)
   ;

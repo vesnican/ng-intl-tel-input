@@ -4,7 +4,7 @@ describe('Module', function () {
   // INITIALIZING //
   //==============//
 
-  beforeEach(module('betsol.intlTelInput'));
+  beforeEach(module('vesnican.intlTelInput'));
 
 
   //=========//

@@ -2,7 +2,7 @@
 
   'use strict';
 
-  angular.module('betsol.intlTelInput', [])
+  angular.module('vesnican.intlTelInput', [])
 
     .constant('intlTelInputOptions', {})
 

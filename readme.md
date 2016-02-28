@@ -1,7 +1,7 @@
-# betsol-ng-intl-tel-input
+# vesnican-ng-intl-tel-input
 
-[![Bower version](https://badge.fury.io/bo/betsol-ng-intl-tel-input.svg)](http://badge.fury.io/bo/betsol-ng-intl-tel-input)
-[![npm version](https://badge.fury.io/js/betsol-ng-intl-tel-input.svg)](http://badge.fury.io/js/betsol-ng-intl-tel-input)
+[![Bower version](https://badge.fury.io/bo/vesnican-ng-intl-tel-input.svg)](http://badge.fury.io/bo/vesnican-ng-intl-tel-input)
+[![npm version](https://badge.fury.io/js/vesnican-ng-intl-tel-input.svg)](http://badge.fury.io/js/vesnican-ng-intl-tel-input)
 
 
 This module for Angular.js provides integration
@@ -20,18 +20,18 @@ Please install the original plugin first. Use the [following guide][intl-tel-inp
 
 ### Install integration library with `NPM` or `Bower`
 
-- `npm i --save betsol-ng-intl-tel-input`
+- `npm i --save vesnican-ng-intl-tel-input`
 
-- `bower install --save betsol-ng-intl-tel-input`
+- `bower install --save vesnican-ng-intl-tel-input`
 
 
 ### Add integration library to your page
 
 ``` html
-<script src="../betsol-ng-intl-tel-input/dist/betsol-ng-intl-tel-input.js"></script>
+<script src="../vesnican-ng-intl-tel-input/dist/vesnican-ng-intl-tel-input.js"></script>
 ```
 
-You should use minified version (`betsol-ng-intl-tel-input.min.js`) in production.
+You should use minified version (`vesnican-ng-intl-tel-input.min.js`) in production.
 
 
 ### Add dependency in your application's module definition
@@ -39,7 +39,7 @@ You should use minified version (`betsol-ng-intl-tel-input.min.js`) in productio
 ``` javascript
 var application = angular.module('application', [
   // ...
-  'betsol.intlTelInput'
+  'vesnican.intlTelInput'
 ]);
 ```
 
@@ -200,10 +200,10 @@ THE SOFTWARE.
 
   [changelog]: changelog.md
   [so-ask]:    http://stackoverflow.com/questions/ask?tags=angularjs,javascript
-  [email]:     mailto:s.fomin@betsol.ru
-  [new-issue]: https://github.com/betsol/ng-intl-tel-input/issues/new
+  [email]:     mailto:vaclav.matouch@gmail.com
+  [new-issue]: https://github.com/vesnican/ng-intl-tel-input/issues/new
   [gulp]:      http://gulpjs.com/
-  [repo-gh]:   https://github.com/betsol/ng-intl-tel-input
+  [repo-gh]:   https://github.com/vesnican/ng-intl-tel-input
 
   [intl-tel-input]:          https://github.com/jackocnr/intl-tel-input
   [intl-tel-input-features]: https://github.com/jackocnr/intl-tel-input#features

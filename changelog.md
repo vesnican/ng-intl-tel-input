@@ -1,4 +1,4 @@
-# betsol-ng-intl-tel-input changelog
+# vesnican-ng-intl-tel-input changelog
 
 ## Version 1.0.0
 (13 Feb 2016)

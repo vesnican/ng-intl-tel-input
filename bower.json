@@ -1,8 +1,8 @@
 {
-  "name": "betsol-ng-intl-tel-input",
+  "name": "vesnican-ng-intl-tel-input",
   "description": "intl-tel-input integration for Angular.js",
   "version": "1.0.0",
-  "main": "dist/betsol-ng-intl-tel-input.js",
+  "main": "dist/vesnican-ng-intl-tel-input.js",
   "ignore": [
     "src",
     "test",
@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/betsol/ng-intl-tel-input.git"
+    "url": "git://github.com/vesnican/ng-intl-tel-input.git"
   },
   "keywords": [
-    "betsol",
+    "vesnican",
     "angular",
     "angular.js",
     "intl-tel-input",

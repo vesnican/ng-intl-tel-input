@@ -1,2 +1,2 @@
-require('./dist/scripts/betsol-ng-intl-tel-input');
-module.exports = 'betsol.intlTelInput';
+require('./dist/scripts/vesnican-ng-intl-tel-input');
+module.exports = 'vesnican.intlTelInput';
