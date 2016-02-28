@@ -1,5 +1,11 @@
 # vesnican-ng-intl-tel-input changelog
 
+## Version 1.0.1
+(28 Feb 2016)
+
+- changed to vesnican
+- made various fixes
+
 ## Version 1.0.0
 (13 Feb 2016)
 

@@ -1,7 +1,7 @@
 {
   "name": "vesnican-ng-intl-tel-input",
   "description": "intl-tel-input integration for Angular.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/vesnican-ng-intl-tel-input.js",
   "ignore": [
     "src",
