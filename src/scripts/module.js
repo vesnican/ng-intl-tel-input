@@ -22,22 +22,14 @@
           var options = angular.extend({}, $scope.intlTelInputOptions || {}, intlTelInputOptions);
 
           // Initializing the control with the plugin.
-          $element
-            .intlTelInput(options)
-            .done(function () {
-              // Updating state of the model controller
-              // when plugin finally initializes.
-              updateModelValue();
-              modelCtrl.$validate();
-            })
-          ;
+          $element.intlTelInput(options);
 
-          // Rendering view when model changes.
-          modelCtrl.$render = function () {
-            if (modelCtrl.$viewValue) {
-              $element.intlTelInput('setNumber', modelCtrl.$modelValue);
+          modelCtrl.$formatters.unshift(function (value) {
+            if (value) {
+              $element.intlTelInput('setNumber', value);
             }
-          };
+            return value;
+          });
 
           // Setting correct model value when view is modified.
           modelCtrl.$parsers.unshift(function () {
