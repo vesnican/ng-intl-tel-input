@@ -1,7 +1,7 @@
 /**
- * betsol-ng-intl-tel-input - intl-tel-input integration for Angular.js
- * @version v0.0.2
- * @link https://github.com/betsol/ng-intl-tel-input
+ * vesnican-ng-intl-tel-input - intl-tel-input integration for Angular.js
+ * @version v1.0.0
+ * @link https://github.com/vesnican/ng-intl-tel-input
  * @license MIT
  *
  * @author Slava Fomin II <s.fomin@betsol.ru>
@@ -10,7 +10,7 @@
 
   'use strict';
 
-  angular.module('betsol.intlTelInput', [])
+  angular.module('vesnican.intlTelInput', [])
 
     .constant('intlTelInputOptions', {})
 
@@ -30,22 +30,14 @@
           var options = angular.extend({}, $scope.intlTelInputOptions || {}, intlTelInputOptions);
 
           // Initializing the control with the plugin.
-          $element
-            .intlTelInput(options)
-            .done(function () {
-              // Updating state of the model controller
-              // when plugin finally initializes.
-              updateModelValue();
-              modelCtrl.$validate();
-            })
-          ;
+          $element.intlTelInput(options);
 
-          // Rendering view when model changes.
-          modelCtrl.$render = function () {
-            if (modelCtrl.$viewValue) {
-              $element.intlTelInput('setNumber', modelCtrl.$modelValue);
+          modelCtrl.$formatters.unshift(function (value) {
+            if (value) {
+              $element.intlTelInput('setNumber', value);
             }
-          };
+            return value;
+          });
 
           // Setting correct model value when view is modified.
           modelCtrl.$parsers.unshift(function () {
